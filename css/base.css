@@ -64,7 +64,6 @@ a {
 	text-decoration: none;
 }
 
-
 body {
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
 }
@@ -80,7 +79,6 @@ body {
 #base {
 	background-color: #FFEFD5;
 }
-
 /* 
 header
 */
@@ -160,14 +158,9 @@ a:hover {
 			padding-left: 230px;
 			line-height: 50px;
 			font-size: 20px;
-
-
 		}
 	}
 }
-
-
-
 /* 
 animation
  */
