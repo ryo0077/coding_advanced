@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./sanitize.css">
     <title>Webページ作成</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-
 </head>
 
 <body>
-    <div id="base">
+    <div id="base" >
         <div class="header">
             <div class="header1">Casteria</div>
             <ul class="header2">
@@ -26,16 +25,6 @@
                 <li>
                     <input type="text" id="value" placeholder="Search">
                     <input type="button" id="button" value="Search">
-
-
-                    <script>
-                        $(function () {
-                            $('#button').click(function () {
-                                var text = $('#value').val();
-
-                            });
-                        });
-                    </script>
                 </li>
             </ul>
         </div>
@@ -61,14 +50,14 @@
                 </div>
 
             </div>
-            <!-- If we need pagination -->
+            <!-- pagination -->
             <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
+            <!-- navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
+            <!-- scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
         <p class="info">新形コロナウイルスに対する取り組みの最新情報をご案内</p>
@@ -109,11 +98,6 @@
                 </ul>
             </div>
         </nav>
-        <script>
-            $('.menu-item-btn').click(function () {
-                $(this).siblings('ul').stop().slideToggle();
-            });
-        </script>
 
         <div class="intro animationTrigger">Signature Food</div>
         <div class="picture animationTrigger">
@@ -183,6 +167,7 @@
 
     </div>
 
+    <!-- fade in animation -->
     <script>
         function animation() {
             $('.animationTrigger').each(function () {
@@ -201,6 +186,15 @@
             animation();
         });
     </script>
+
+   <!-- アコメニューンメニュー　-->
+    <script>
+            $('.menu-item-btn').click(function () {
+                $(this).siblings('ul').stop().slideToggle();
+            });
+    </script>
+
+   <!-- 検索ボタン -->
     <script>
         $(function () {
             $('#button').click(function () {
@@ -210,6 +204,7 @@
         });
     </script>
 
+   <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
@@ -240,7 +235,7 @@
         });
 
     </script>
-
+    
 
 </body>
 

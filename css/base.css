@@ -80,6 +80,7 @@ body {
 #base {
 	background-color: #FFEFD5;
 }
+
 /* 
 header
 */
@@ -135,46 +136,38 @@ a:hover {
 	background-color: #FFEFD5;
 }
 
-.menu {
-	width: 100%;
+.menu-item {
+	.menu-item-btn {
+		height: 60px;
+		align-items: center;
+		background-color: #FFC7AF;
+		cursor: pointer;
+		width: calc(100% - 400px);
+		text-align: left;
+		border: none;
+		outline: none;
+		display: flex;
+		font-size: 30px;
+		margin: 0 150px 0 250px;
+		padding: 10px 0 0 20px;
+	}
+
+	ul {
+		display: none;
+
+		li {
+			background-color: #FFEFD5;
+			padding-left: 230px;
+			line-height: 50px;
+			font-size: 20px;
 
 
-	.menu-item {
-		.menu-item-btn {
-			height: 60px;
-			align-items: center;
-			background-color: #FFC7AF;
-			cursor: pointer;
-			width: calc(100% - 400px);
-			text-align: left;
-			border: none;
-			outline: none;
-			transition: .5s;
-			display: flex;
-			font-size: 30px;
-			margin: 0 150px 0 250px;
-			padding: 10px 0 0 20px;
-		}
-
-		ul {
-			display: none;
-
-			li {
-				height: 60px;
-				display: flex;
-				align-items: center;
-				background-color: beige;
-				background-color: #FFEFD5;
-				overflow: hidden;
-				padding-left: 230px;
-				line-height: 50px;
-				margin: 0 0 0 20px;
-				font-size: 20px;
-
-			}
 		}
 	}
 }
+
+
+
 /* 
 animation
  */
@@ -194,8 +187,9 @@ animation
 
 @keyframes animation {
 	0% {
-		opacity: 0;		
+		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -207,6 +201,7 @@ animation
 	padding-left: 0;
 	margin: 100px 0 20px 270px;
 }
+
 /* 
 picture
  */
@@ -223,12 +218,13 @@ picture
 	margin: 30px 0 0 50px;
 	font-size: 30px;
 }
+
 /* 
 address
 */
 .address {
 	background-color: black;
-	width: 1400px;
+	width: calc(100% - 400px);
 	height: 510px;
 	margin: 20px 150px 20px 250px;
 	display: flex;
@@ -248,10 +244,11 @@ address
 }
 
 .address-p {
-	width: 100%;
+	width: 40%;
 	height: 430px;
 	margin: 40px 0px 40px 170px;
 }
+
 /* 
 store
 */
@@ -268,11 +265,13 @@ store
 
 .store-img {
 	border-radius: 50%;
+	margin: 0 30px;
 }
 
 .store-address>.store-picture {
 	width: 25%;
 }
+
 /* 
 footer
 */
@@ -282,16 +281,11 @@ footer
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-
 }
 
 .footer-text a {
 	margin: 0 10px;
-
 	color: black;
-
-
 }
 
 .swiper {
