@@ -75,79 +75,28 @@ body {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+/* 220行目からPC用CSS */
+/* 348行目からスマートフォン用CSS */
 #base {
 	background-color: #FFEFD5;
 }
-/* 
-header
-*/
-.header {
-	background: lightgray;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.header1 {
-	width: 150px;
-	cursor: pointer;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.header2 {
-	display: flex;
-	align-items: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-ul li {
-	margin: 20px 10px;
-}
-
-ul li a {
-	color: black;
-}
-
-a:hover {
-	font-weight: bold;
-}
-
-.square {
-	width: 30px;
-	height: 30px;
-	background: black;
-	border-radius: 10px;
-	margin: 5px 10px 0 0;
-}
-
 .info {
 	margin-top: 10px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 50px;
 	background-color: #FFEFD5;
 }
-
 .menu-item {
 	.menu-item-btn {
 		height: 60px;
 		align-items: center;
 		background-color: #FFC7AF;
-		cursor: pointer;
-		width: calc(100% - 400px);
+		cursor: pointer;		
 		text-align: left;
 		border: none;
 		outline: none;
 		display: flex;
 		font-size: 30px;
-		margin: 0 150px 0 250px;
-		padding: 10px 0 0 20px;
 	}
 
 	ul {
@@ -155,15 +104,45 @@ a:hover {
 
 		li {
 			background-color: #FFEFD5;
-			padding-left: 230px;
 			line-height: 50px;
 			font-size: 20px;
 		}
 	}
 }
-/* 
-animation
- */
+.header {
+	display: flex;
+	background: lightgray;
+	width: 100%;
+	height: 100%;	
+}
+.header1 {
+	width: 150px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+}
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	font-weight: bold;
+}
+#value{
+	border: none;
+	border-radius: 5px;
+}
+#button{
+	border: none;
+	border-radius: 5px;
+}
+.square {
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 5px;
+	margin: 5px 10px 0 0;
+}
 .animationTrigger {
 	opacity: 0;
 }
@@ -190,6 +169,98 @@ animation
 
 .intro {
 	font-weight: bold;
+}
+
+.address {
+	background-color: black;
+}
+
+.address-t {
+	color: white;
+	line-height: 50px;
+}
+
+.address-t {
+	padding-left: 20px;
+}
+
+.footer {
+	background-color: lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-text a {
+	margin: 0 10px;
+	color: black;
+}
+.res {
+	width: 100%;
+	height: 100%;
+}
+.int {
+	width: 100%;
+	height: 100%;
+}
+
+.fish {
+	width: 100%;
+	height: 100%;
+}
+
+.pasta {
+	width: 100%;
+	height: 100%;
+}
+
+.food4 {
+	width: 100%;
+	height: 100%;
+}
+/* 481px以上で適応されるCSS（PC用） */
+@media screen and (min-width: 481px) {
+
+.hd{
+	display: flex;
+    background: lightgray;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between; 
+	align-items: center; 
+}
+
+.header2 {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+.header2 a {
+    white-space: nowrap; 
+}
+.header2 li {
+	margin: 10px 20px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	gap: 5px;
+}
+
+.info {	
+	font-size: 50px;
+}
+
+.menu-item {
+	.menu-item-btn {
+		width: calc(100% - 400px);
+		margin: 0 150px 0 250px;
+		padding: 10px 0 0 20px;
+	}
+	li {		
+			padding-left: 230px;
+		}
+}
+
+.intro {
 	font-size: 30px;
 	padding-left: 0;
 	margin: 100px 0 20px 270px;
@@ -211,12 +282,10 @@ picture
 	margin: 30px 0 0 50px;
 	font-size: 30px;
 }
-
 /* 
 address
 */
 .address {
-	background-color: black;
 	width: calc(100% - 400px);
 	height: 510px;
 	margin: 20px 150px 20px 250px;
@@ -224,8 +293,6 @@ address
 }
 
 .address-t {
-	color: white;
-	line-height: 50px;
 	margin: 45px 50px 0 20px;
 	font-size: 20px;
 }
@@ -233,7 +300,6 @@ address
 .address-h {
 	font-weight: bold;
 	font-size: 30px;
-	padding-left: 20px;
 }
 
 .address-p {
@@ -269,16 +335,7 @@ store
 footer
 */
 .footer {
-	background-color: lightgray;
 	height: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.footer-text a {
-	margin: 0 10px;
-	color: black;
 }
 
 .swiper {
@@ -287,27 +344,146 @@ footer
 	height: 500px;
 }
 
-.res {
-	width: 100%;
-	height: 100%;
+}
+/* 480px以下に適用されるCSS（スマホ用）  */
+ @media screen and (max-width: 480px) {
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* 
+header
+ */
+.header {
+	justify-content: space-between;
+}
+.header2{
+  max-height: 0;
+  margin: -10px 0;
+    padding: 0 15px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+	background: lightgray;
+}
+.header2.open {
+	max-height: 300px;
+}
+.header2 li {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
+.header2 li a {
+    text-decoration: none;
+	font-size: 20px;
+    color: #000;
+}
+/* 
+hamburger
+*/
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+	 border: 1px solid #aaa; 
+    border-radius: 5px;    
+    padding: 15px 20px;
+}
+.hamburger:active {
+    background-color: #ddd;
+    border-color: orange;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
 }
 
-.int {
-	width: 100%;
-	height: 100%;
+
+	 .menu-item {
+		margin: 0 40px 0 40px;
+	.menu-item-btn {
+		padding: 10px;		
+	}
+} 
+
+.intro {
+	font-size: 20px;
+	margin: 50px 0 20px 50px;
+}
+/* 
+picture
+*/
+.picture-1 {
+	padding-left: 50px;
+	width: 450px;
+}
+.picture-text {
+	margin-left: 50px;
+	font-size: 20px;
+}
+/* 
+address
+*/
+.address {
+	width: 400px;
+	margin: 50px 0px 20px 50px;
 }
 
-.fish {
-	width: 100%;
-	height: 100%;
+.address-t {
+	padding-left: 20px;
+	font-size: 15px;
 }
 
-.pasta {
-	width: 100%;
-	height: 100%;
+.address-h {
+	font-weight: bold;
+	font-size: 30px;
+}
+.address-p {
+	width: 400px;
+    margin-top: 20px;
+}
+.info {	
+	font-size: 30px;	
+}
+/* 
+store
+*/
+.store {
+	display: none !important;
+}
+.store-address {
+	display: none !important;
 }
 
-.food4 {
+.store-img {
+	display: none !important;
+}
+.footer {	
+	height: 150px;
+	width: 100%px;
+}
+.swiper {
+	width: 80%;
+	height: 400px;
+	margin-top: 30px;
+}
+#value{
+	width: calc(100% - 100px);
+	padding: 5px;
+}
+#button{
+	padding: 5px 10px;
+	font-weight: bold;
+	width: 80px;
+}
+#base {
+	background-color: #FFEFD5;
 	width: 100%;
-	height: 100%;
+}
 }
