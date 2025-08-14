@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./sanitize.css">
+    <title>Webページ作成</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="base">
+        <div class="hd">
+        <div class="header">
+    <div class="header1">Casteria</div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<ul class="header2" id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Drink</a></li>
+    <li><a href="#">お問合せ</a></li>
+    <li>
+        <input type="text" id="value" placeholder="Search">
+        <input type="button" id="button" value="Search">
+    </li>
+</ul>
+</div>
+
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="res" src="./img/restaurant.jpg" alt="restaurant">
+                </div>
+                <div class="swiper-slide">
+                    <img class="int" src="./img/interior.jpg" alt="interior">
+                </div>
+                <div class="swiper-slide">
+                    <img class="fish" src="./img/food.jpg" alt="food">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pasta" src="./img/food2.jpg" alt="food2">
+                </div>
+                <div class="swiper-slide">
+                    <img class="food4" src="./img/food4.jpg" alt="food4">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <p class="info">新形コロナウイルスに対する取り組みの最新情報をご案内</p>
+
+        <nav class="menu">
+            <div class="menu-item">
+                <div class="menu-item-btn">
+                    <div class="square"></div>衛生面に関して
+                </div>
+                <ul>
+                    <li>・マスクを着用しての接客</li>
+                    <li>・出勤前の検温の徹底</li>
+                    <li>・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</li>
+                    <li>・より頻度の高い手洗いの励行</li>
+                    <li>・テーブルにお客様用の消毒用アルコールの設置</li>
+                    <li>・従業員間の距離確保のため、休憩や研修時の客席利用</li>
+                </ul>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-btn">
+                    <div class="square"></div>お客様へのご協力のお願い
+                </div>
+                <ul>
+                    <li>・店内では、飲食時以外のマスク着用をお願いいたします</li>
+                    <li>・入店時の手指の指毒にご協力ください</li>
+                    <li>・レジに並ぶ際、目安を示すフロアステッカーに沿った列感覚確保にご協力ください</li>
+                    <li>・多数でお越しの際は、お１人がまとめてご注文願います</li>
+                    <li>・発熱や体調不良の際はご入店をお控えください</li>
+                </ul>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-btn">
+                    <div class="square"></div>サービスに関して
+                </div>
+                <ul>
+                    <li>・直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+                    <li>・ドリンクやフードのサンプリング中止</li>
+                    <li>・地域活動・イベントの中止</li>
+                    <li>・混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
+                    <li>・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+                    <li>・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="intro animationTrigger">Signature Food</div>
+        <div class="picture animationTrigger">
+            <img class="picture-1" src="./img/food.jpg" alt="fish">
+            <div class="picture-text">
+                サーモンは刺身やカルパッチョで食べるのが美味しいで
+                <br>すが、リッチな気分になれるサーモンステーキがおすす
+                <br>めです。サーモンの美味しさを引き立てる2種のソース
+                <br>も絶品です!
+            </div>
+        </div>
+        <div class="intro animationTrigger">Our Coffee</div>
+        <div class="picture animationTrigger">
+            <img class="picture-1" src="./img/barista.jpg" alt="coffee">
+            <div class="picture-text">
+                当店のコーヒー豆が厳選して世界中から買い付けていま
+                <br>す。そして、そのコーヒー豆のおいしさを最大限に引き
+                <br>出すために自社のロースタリーで焙煎しています。
+            </div>
+        </div>
+        <div class="intro animationTrigger">Our Food</div>
+        <div class="picture animationTrigger">
+            <img class="picture-1" src="./img/food3.jpg" alt="food3">
+            <div class="picture-text">
+                当店は何よりまずは衛生管理に気をつけています。「安
+                <br>全・安心」をお届けするために日々継続的な努力を惜し
+                <br> みません。
+            </div>
+        </div>
+
+        <div class="address animationTrigger">
+            <div class="address-t">
+                <div class="address-h">Address</div>
+                <address>681 xxx Drive, xxxxxx xxxx #01 - 06 000000
+                    <br>Opening Hours</br>
+                </address>
+                <div class="address-h">Monday - Friday: 10am - 9pm</div>
+                <div>Saturdays, Sundays & Public Holidays: 9am - 9pm</div>
+            </div>
+            <img class="address-p" src="./img/barista.jpg" alt="coffee">
+        </div>
+
+
+        <div class="store animationTrigger">店舗一覧</div>
+        <ul class="store-address animationTrigger">
+            <li class="store-picture">
+                <img class="store-img" src="./img/restaurant2.jpg" width="220" height="220" alt="restaurant2">
+                <dd>東京都渋谷区xxxxxx xxxxx</dd>
+            </li>
+            <li class="store-picture">
+                <img class="store-img" src="./img/restaurant3.jpg" width="220" height="220" alt="restaurant3">
+                <dd>千葉県松戸区xxxxx xxxxx</dd>
+            </li>
+            <li class="store-picture">
+                <img class="store-img" src="./img/restaurant4.jpg" width="220" height="220" alt="restaurant4">
+                <dd>神奈川県横浜市xxxxx xxxx</dd>
+            </li>
+            <li class="store-picture">
+                <img class="store-img" src="./img/restaurant5.jpg" width="220" height="220" alt="restaurant5">
+                <dd>埼玉県川越市xxxxx xxxx</dd>
+            </li>
+        </ul>
+
+
+        <footer class="footer">
+            <nav class="footer-text">
+                <span><a href="/privacy">プライバシーポリシー</a></span>
+                <span><a href="/contact">お問い合わせ</a></span>
+                <span><a href="/company">運営会社</a></span>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

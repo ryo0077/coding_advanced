@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+	display: block;
+}
+
+hr {
+	display: none;
+}
+
+em {
+	font-style: normal
+}
+
+input {
+	line-height: auto;
+	vertical-align: middle;
+}
+
+strong.more {
+	color: #c30
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* 220行目からPC用CSS */
+/* 348行目からスマートフォン用CSS */
+#base {
+	background-color: #FFEFD5;
+}
+.info {
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #FFEFD5;
+}
+.menu-item {
+	.menu-item-btn {
+		height: 60px;
+		align-items: center;
+		background-color: #FFC7AF;
+		cursor: pointer;		
+		text-align: left;
+		border: none;
+		outline: none;
+		display: flex;
+		font-size: 30px;
+	}
+
+	ul {
+		display: none;
+
+		li {
+			background-color: #FFEFD5;
+			line-height: 50px;
+			font-size: 20px;
+		}
+	}
+}
+.header {
+	display: flex;
+	background: lightgray;
+	width: 100%;
+	height: 100%;	
+}
+.header1 {
+	width: 150px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+}
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	font-weight: bold;
+}
+#value{
+	border: none;
+	border-radius: 5px;
+}
+#button{
+	border: none;
+	border-radius: 5px;
+}
+.square {
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 5px;
+	margin: 5px 10px 0 0;
+}
+.animationTrigger {
+	opacity: 0;
+}
+
+.animation {
+	opacity: 0;
+	animation-name: animation;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.intro {
+	font-weight: bold;
+}
+
+.address {
+	background-color: black;
+}
+
+.address-t {
+	color: white;
+	line-height: 50px;
+}
+
+.address-t {
+	padding-left: 20px;
+}
+
+.footer {
+	background-color: lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-text a {
+	margin: 0 10px;
+	color: black;
+}
+.res {
+	width: 100%;
+	height: 100%;
+}
+.int {
+	width: 100%;
+	height: 100%;
+}
+
+.fish {
+	width: 100%;
+	height: 100%;
+}
+
+.pasta {
+	width: 100%;
+	height: 100%;
+}
+
+.food4 {
+	width: 100%;
+	height: 100%;
+}
+/* 481px以上で適応されるCSS（PC用） */
+@media screen and (min-width: 481px) {
+
+.hd{
+	display: flex;
+    background: lightgray;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between; 
+	align-items: center; 
+}
+
+.header2 {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+.header2 a {
+    white-space: nowrap; 
+}
+.header2 li {
+	margin: 10px 20px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	gap: 5px;
+}
+
+.info {	
+	font-size: 50px;
+}
+
+.menu-item {
+	.menu-item-btn {
+		width: calc(100% - 400px);
+		margin: 0 150px 0 250px;
+		padding: 10px 0 0 20px;
+	}
+	li {		
+			padding-left: 230px;
+		}
+}
+
+.intro {
+	font-size: 30px;
+	padding-left: 0;
+	margin: 100px 0 20px 270px;
+}
+
+/* 
+picture
+ */
+.picture {
+	display: flex;
+	margin: 0 30px 0 250px;
+}
+
+.picture-1 {
+	width: 40%;
+}
+
+.picture-text {
+	margin: 30px 0 0 50px;
+	font-size: 30px;
+}
+/* 
+address
+*/
+.address {
+	width: calc(100% - 400px);
+	height: 510px;
+	margin: 20px 150px 20px 250px;
+	display: flex;
+}
+
+.address-t {
+	margin: 45px 50px 0 20px;
+	font-size: 20px;
+}
+
+.address-h {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.address-p {
+	width: 40%;
+	height: 430px;
+	margin: 40px 0px 40px 170px;
+}
+
+/* 
+store
+*/
+.store {
+	font-size: 30px;
+	text-align: center;
+}
+
+.store-address {
+	display: flex;
+	margin: 0 180px 0 280px;
+	font-size: large;
+}
+
+.store-img {
+	border-radius: 50%;
+	margin: 0 30px;
+}
+
+.store-address>.store-picture {
+	width: 25%;
+}
+
+/* 
+footer
+*/
+.footer {
+	height: 100px;
+}
+
+.swiper {
+	width: 100%;
+	max-width: 100%;
+	height: 500px;
+}
+
+}
+/* 480px以下に適用されるCSS（スマホ用）  */
+ @media screen and (max-width: 480px) {
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* 
+header
+ */
+.header {
+	justify-content: space-between;
+}
+.header2{
+  max-height: 0;
+  margin: -10px 0;
+    padding: 0 15px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+	background: lightgray;
+}
+.header2.open {
+	max-height: 300px;
+}
+.header2 li {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
+.header2 li a {
+    text-decoration: none;
+	font-size: 20px;
+    color: #000;
+}
+/* 
+hamburger
+*/
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+	 border: 1px solid #aaa; 
+    border-radius: 5px;    
+    padding: 15px 20px;
+}
+.hamburger:active {
+    background-color: #ddd;
+    border-color: orange;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+}
+.info {
+	margin: 0 30px;
+}
+
+	 .menu-item {
+		margin: 0 40px 0 40px;
+	.menu-item-btn {
+		padding: 10px;		
+	}
+} 
+
+.intro {
+	font-size: 20px;
+	margin: 50px 0 20px 50px;
+}
+/* 
+picture
+*/
+.picture-1 {
+	padding-left: 40px;
+	width: calc(100% - 30px);
+}
+.picture-text {
+	margin: 0 40px;
+	font-size: 20px;
+}
+/* 
+address
+*/
+.address {
+	width: calc(100% - 50px);
+	margin: 50px 0px 20px 30px;
+}
+
+.address-t {
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.address-h {
+	font-weight: bold;
+	font-size: 30px;
+}
+.address-p {
+	width: 100%;
+    margin-top: 20px;
+}
+.info {	
+	font-size: 30px;	
+}
+/* 
+store
+*/
+.store {
+	display: none !important;
+}
+.store-address {
+	display: none !important;
+}
+
+.store-img {
+	display: none !important;
+}
+.footer {	
+	height: 150px;
+	width: 100%px;
+}
+.swiper {
+	width: 80%;
+	height: 400px;
+	margin-top: 30px;
+}
+#value{
+	width: calc(100% - 100px);
+	padding: 5px;
+}
+#button{
+	padding: 5px 10px;
+	font-weight: bold;
+	width: 80px;
+}
+#base {
+	background-color: #FFEFD5;
+	width: 100%;
+}
+}
